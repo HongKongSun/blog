@@ -32,6 +32,7 @@
       return bucketList.filter(item => item.status === this.type)
     }
   }
+  
 </script>
 
 <style scoped lang="scss">

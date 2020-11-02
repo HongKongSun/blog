@@ -6,7 +6,7 @@ const bucketList: TBucketItem[] = [
     status: 'done',
     date: '2020-10-11',
     imgs: [
-      getImageUrl('fly1.jpeg'),
+      getImageUrl('life.JPG'),
       getImageUrl('fly2.jpeg'),
       getImageUrl('fly3.jpeg'),
       getImageUrl('fly4.jpeg'),
