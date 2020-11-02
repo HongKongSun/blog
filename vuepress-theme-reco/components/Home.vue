@@ -85,6 +85,7 @@ export default {
     }
 
     .description {
+      
       font-size: 1.6rem;
       line-height: 1.3;
       color: var(--text-color);

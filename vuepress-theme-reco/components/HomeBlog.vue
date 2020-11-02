@@ -165,7 +165,8 @@ export default {
   padding: 0;
   margin: 0px auto;
   .hero {
-    margin $navbarHeight auto 0
+    // margin $navbarHeight auto 0
+    margin 0 auto 0
     position relative
     box-sizing border-box
     padding 0 20px
@@ -185,6 +186,7 @@ export default {
     }
 
     .description {
+      color: #fff;
       margin: 1.8rem auto;
       font-size: 1.6rem;
       line-height: 1.3;

@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar">
+  <header class="navbar" v-show="showNav">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
     <router-link
@@ -43,14 +43,19 @@ import Mode from '@theme/components/Mode'
 
 export default {
   components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox, Mode },
-
   data () {
     return {
+      // visible: false,
+      pageYOffset:0,
+      visibilityHeight: 1,
       linksWrapMaxWidth: null
     }
   },
 
   mounted () {
+    window.addEventListener('scroll', ()=>{
+      this.pageYOffset = window.pageYOffset;
+    })
     const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
     const NAVBAR_VERTICAL_PADDING = parseInt(css(this.$el, 'paddingLeft')) + parseInt(css(this.$el, 'paddingRight'))
     const handleLinksWrapWidth = () => {
@@ -66,6 +71,14 @@ export default {
   },
 
   computed: {
+     showNav () {
+       const visible = this.pageYOffset > this.visibilityHeight
+       if(this.$route.path==="/"){
+         
+         return visible
+       }
+      return true
+    },
     algolia () {
       return this.$themeLocaleConfig.algolia || this.$themeConfig.algolia || {}
     },
@@ -74,8 +87,13 @@ export default {
       return this.algolia && this.algolia.apiKey && this.algolia.indexName
     }
   },
-
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.throttle(this.handleScroll, 500))
+  },
   methods: {
+    // handleScroll () {
+    //   this.visible = window.pageYOffset > this.visibilityHeight
+    // },
     throttle (func, delay) {
       let timer = null
       let startTime = Date.now()

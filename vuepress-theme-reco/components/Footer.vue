@@ -1,10 +1,11 @@
 <template>
   <div class="footer-wrapper">
     <span>
-      <reco-icon icon="reco-theme" />
-      <a target="blank" href="https://vuepress-theme-reco.recoluan.com">{{`vuepress-theme-reco@${version}`}}</a>
+      © 2019 - 2020 ❤ Made By HongKong
+      <!-- <reco-icon icon="reco-theme" /> -->
+      <!-- <a target="blank" href="https://vuepress-theme-reco.recoluan.com">{{`vuepress-theme-reco@${version}`}}</a> -->
     </span>
-    <span v-if="$themeConfig.record">
+    <!-- <span v-if="$themeConfig.record">
       <reco-icon icon="reco-beian" />
       <a :href="$themeConfig.recordLink || '#'">{{ $themeConfig.record }}</a>
     </span>
@@ -25,7 +26,7 @@
       <img src="https://img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png" alt="">
       <a :href="$themeConfig.cyberSecurityLink || '#'">{{ $themeConfig.cyberSecurityRecord }}</a>
     </p>
-    <Comments :isShowComments="false"/>
+    <Comments :isShowComments="false"/> -->
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 module.exports = {
-  title: "我是小黑呀",
+  title: "孙香港的个人主页",
   description: '简单的个人输出空间',
   dest: 'example/public',
   head: [
@@ -58,7 +58,7 @@ module.exports = {
         text: 'Tag' // 默认 “标签”
       }
     },
-    // logo: '/head.png',
+    logo: '/head.png',
     authorAvatar: '/life.JPG',
     // 搜索设置
     search: false,

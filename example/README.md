@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: 我是小黑呀
+heroText: 
 tagline: 简单的个人输出空间
 bgImage: '/hero.jpeg'
 bgImageStyle: {
