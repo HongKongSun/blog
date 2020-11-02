@@ -18,48 +18,50 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '🏠 主页', link: '/' },
-      { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
-      // { text: 'sidebar', link: '/views/sidebar/' },
-      // { text: 'sidebar', link: '/views/sidebargroup/' }
+      // { text: '人生清单', link: '/views/LifeList/' },
+      { text: '📄 人生清单', link: '/views/LifeList' },
+      { text: '专栏', link: '/views/sidebargroup/', icon: 'reco-document' },
+
+      { text: '⌚️ 时间轴', link: '/timeline/' },
+      { text: '关于我', link: '/views/About/about', icon: 'reco-wechat'},
     ],
-    // sidebar: {
-    //   '/views/sidebar/': [
-    //     '',
-    //     'bar1',
-    //     'bar2'
-    //   ],
-    //   '/views/sidebargroup/': [
-    //     {
-    //       title: '基础',
-    //       collapsable: true,
-    //       children: [
-    //         '',
-    //         'bar1'
-    //       ]
-    //     },
-    //     {
-    //       title: '进阶',
-    //       collapsable: true,
-    //       children: [
-    //         'bar2'
-    //       ]
-    //     },
-    //   ]
-    // },
+    sidebar: {
+      '/views/sidebargroup/': [
+        {
+          title: '前端面试专栏',
+          collapsable: true,
+          children: ['','frontend'],
+        },
+        {
+          title: 'python专栏',
+          collapsable: true,
+          children: [
+            'python'
+          ]
+        },
+        {
+          title: 'AI 专栏',
+          collapsable: true,
+          children: [
+            'ai'
+          ]
+        },
+      ]
+    },
     type: 'blog',
     // 博客设置
     blogConfig: {
       category: {
         location: 2, // 在导航栏菜单中所占的位置，默认2
-        text: '类别' // 默认 “分类”
+        text: '文章' // 默认 “分类”
       },
       tag: {
-        location: 3, // 在导航栏菜单中所占的位置，默认3
-        text: 'Tag' // 默认 “标签”
+        location: 4, // 在导航栏菜单中所占的位置，默认3
+        text: '标签' // 默认 “标签”
       }
     },
-    logo: '/head.png',
-    authorAvatar: '/life.JPG',
+    logo: '/avatar.jpeg',
+    authorAvatar: '/avatar.jpeg',
     // 搜索设置
     search: false,
     searchMaxSuggestions: 10,
@@ -80,17 +82,18 @@ module.exports = {
     // 友情链接
     friendLink: [
       {
-        title: '友情链接',
+        title: '我是小黑呀',
         desc: 'Enjoy when you can, and endure when you must.',
-        email: '1156743527@qq.com',
-        link: 'https://www.recoluan.com'
-      },
-      {
-        title: 'vuepress-theme-reco',
-        desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+        email: 'hongkongsun7@gmail.com',
         avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        link: 'https://vuepress-theme-reco.recoluan.com'
+        link: 'https://hongkongsun.github.io/'
       },
+      // {
+      //   title: 'vuepress-theme-reco',
+      //   desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+      //   avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
+      //   link: 'https://vuepress-theme-reco.recoluan.com'
+      // },
     ],
     /**
      * support for

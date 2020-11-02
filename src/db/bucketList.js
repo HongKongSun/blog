@@ -1,6 +1,6 @@
-import {getImageUrl} from '@/lib/constants'
+import {getImageUrl} from '../lib/constants.js'
 
-const bucketList: TBucketItem[] = [
+const bucketList= [
   {
     name: '体验一次滑翔伞',
     status: 'done',
@@ -524,10 +524,7 @@ const bucketList: TBucketItem[] = [
     ],
     date: '2018-3-3'
   },
-  {
-    name: '考过 CFA',
-    status: 'todo',
-  },
+  
   {
     name: '学一次木工雕刻',
     status: 'todo'

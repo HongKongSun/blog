@@ -1,0 +1,4 @@
+
+<ClientOnly>
+<bucketlist-demo/>
+</ClientOnly>

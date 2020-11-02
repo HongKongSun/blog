@@ -10,9 +10,12 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "core-js": "2.6.4",
     "dayjs": "^1.8.27",
     "element-ui": "^2.13.1",
+    "swiper": "^6.3.5",
     "vue": "2.6.12",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.1",
     "vue-router": "^3.0.2",

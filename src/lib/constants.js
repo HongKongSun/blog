@@ -6,10 +6,10 @@ export const giteeImgBaseUrl = 'https://gitee.com/hongkongsun/pic-bed/raw/master
 export const githubResBaseUrl = 'https://haixiang6123.github.io'
 export const giteeResBaseUrl = 'https://haixiang6123.gitee.io'
 
-export const getImageUrl = (fileName: string) =>
+export const getImageUrl = (fileName) =>
   `${ giteeImgBaseUrl }/${fileName}`
 
-export const getRepoUrl = (repo: string) =>
-  `${isChina() ? giteeResBaseUrl : githubResBaseUrl}/${repo}`
+// export const getRepoUrl = (repo: string) =>
+//   `${isChina() ? giteeResBaseUrl : githubResBaseUrl}/${repo}`
 
-export const isChina = () => window.location.href.includes('.cn')
+// export const isChina = () => window.location.href.includes('.cn')
