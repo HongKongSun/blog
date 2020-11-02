@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: 
-tagline: 输出的个人空间
+heroText: 我是小黑呀
+tagline: 简单的个人输出空间
 bgImage: '/hero.jpeg'
 bgImageStyle: {
   height: '500px'

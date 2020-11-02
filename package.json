@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "docs:dev": "vuepress dev example",
-    "docs:build": "vuepress build docs",
+    "docs:build": "vuepress build example",
     "deploy": "sh deploy.sh"
   },
   "dependencies": {

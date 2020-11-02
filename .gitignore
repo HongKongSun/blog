@@ -6,7 +6,7 @@ node_modules
 .vscode
 
 # vuepress 
-docs/.vuepress/dist
+# example/public  
 
 # 百度链接推送
 urls.txt

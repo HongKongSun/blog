@@ -4,29 +4,29 @@
 set -e
 
 # 构建
-yarn build
+yarn docs:build
 
 # cd 到构建输出的目录下
-cd dist
+cd example/public  
 
 git init
 
-# 部署到自定义域域名
-echo 'yanhaixiang.com' > CNAME
+# 部署到自定义域域名 echo 'yanhaixiang.com' > CNAME
+
 
 git add -A
 git commit -m 'deploy'
 
 # 部署到 Github
-git push -f git@github.com:Haixiang6123/Haixiang6123.github.io.git master
+git push -f git@github.com:HongKongSun/hongkongsun.github.io.git master
 
-# 部署到自定义域域名
-echo 'yanhaixiang.cn' > CNAME
+# 部署到自定义域域名 echo 'yanhaixiang.cn' > CNAME
+
 
 git add -A
 git commit -m 'deploy'
 
-# 部署到 Coding
-git push -f git@e.coding.net:hai_guai/hai_guai.coding.me.git master
+cd - # 退回开始所在目录
+rm -rf example/public  
 
-cd -
+
