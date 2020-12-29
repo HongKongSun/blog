@@ -5,6 +5,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+    // ['meta', { name: 'baidu-site-verification', content: 'code-dmHFWs3rRk' }]
   ],
   // markdown: {
   //   // markdown-it-anchor 的选项

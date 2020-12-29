@@ -10,6 +10,9 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "browserslist": "^4.14.6",
+    "caniuse-lite": "^1.0.30001156",
     "core-js": "2.6.4",
     "dayjs": "^1.8.27",
     "element-ui": "^2.13.1",
