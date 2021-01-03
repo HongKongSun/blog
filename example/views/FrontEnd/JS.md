@@ -1,10 +1,10 @@
 ---
-title: webpack 基础知识整理
+title: JS
 date: 2020-07-24
 tags:
  - webpack       
 categories: 
- - 前端
+ - FrontEnd
 ---
 
 ## webpack简介

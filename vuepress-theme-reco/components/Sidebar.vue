@@ -1,5 +1,6 @@
 <template>
   <aside class="sidebar">
+    
     <slot name="top"/>
     <NavLinks/>
     <SidebarLinks :depth="0" :items="items"/>

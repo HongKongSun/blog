@@ -1,7 +1,7 @@
 <template>
   <div class="footer-wrapper">
     <span>
-      © 2019 - 2020 ❤ Made By HongKong
+      © 2019 - 2021 ❤ Made By HongKong
       <!-- <reco-icon icon="reco-theme" /> -->
       <!-- <a target="blank" href="https://vuepress-theme-reco.recoluan.com">{{`vuepress-theme-reco@${version}`}}</a> -->
     </span>

@@ -32,6 +32,5 @@ git push -f git@e.coding.net:cugb1/hongkong.coding.me.git master
 # https://e.coding.net/cugb1/blog/blog.git
 
 cd - # 退回开始所在目录
-rm -rf example/public  
 
 

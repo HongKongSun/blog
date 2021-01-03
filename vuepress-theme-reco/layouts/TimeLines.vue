@@ -2,7 +2,7 @@
   <Common class="timeline-wrapper" :sidebar="false">
     <ul class="timeline-content">
       <ModuleTransition >
-        <li v-show="recoShowModule" class="desc">Yesterday Once More!</li>
+        <li v-show="recoShowModule" class="desc"><h3> HongKong 你已经写了{{$recoPosts.length}}文章了，继续加油！</h3></li>
       </ModuleTransition>
       <ModuleTransition
         :delay="String(0.08 * (index + 1))"

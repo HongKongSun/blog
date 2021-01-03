@@ -1,7 +1,8 @@
 <template>
     <div class="bucket-list">
         <h1>
-            <span>已完成</span>
+            <span v-if="type=='done'">已完成</span>
+            <span v-if="type=='todo'">待完成</span>
 
             <span>
               <el-radio v-model="type" label="done">已完成</el-radio>
@@ -35,6 +36,7 @@
     }},
 
   methods: {
+    
   },
 };
 
@@ -44,9 +46,7 @@
   // export default class BucketList extends Vue {
   //   type = 'done'
 
-  //   get filterBucketList() {
-  //     return bucketList.filter(item => item.status === this.type)
-  //   }
+  //   
   // }
   
 </script>

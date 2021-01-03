@@ -19,35 +19,141 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '🏠 主页', link: '/' },
-      // { text: '人生清单', link: '/views/LifeList/' },
       { text: '📄 人生清单', link: '/views/LifeList' },
-      { text: '专栏', link: '/views/sidebargroup/', icon: 'reco-document' },
-
+      {
+        text: '专栏', icon: 'reco-document', items: [
+          // { text: '个人总结', link: '/views/review/', },
+          { text: '交流技巧', link: '/views/speaking/', },
+          { text: '商学课', link: '/views/business/', },
+          { text: 'AI-PM', link: '/views/AI-PM/', },
+          { text: 'AI技术', link: '/views/AI-Skill/', },
+          { text: '前端面试专栏', link: '/views/FrontEnd/' },
+        ],
+      },
       { text: '⌚️ 时间轴', link: '/timeline/' },
-      { text: '关于我', link: '/views/About/about', icon: 'reco-wechat'},
+      { text: '关于我', link: '/views/About/about', icon: 'reco-wechat' },
     ],
     sidebar: {
-      '/views/sidebargroup/': [
+      // 前端
+      '/views/FrontEnd/': [
+        // 介绍
         {
-          title: '前端面试专栏',
-          collapsable: true,
-          children: ['','frontend'],
+          title: '栏目介绍',
+          collapsable: false,
+          children: [''],
         },
+        // 条目1:HTML+CSS
         {
-          title: 'python专栏',
+          title: 'HTML + CSS',
           collapsable: true,
-          children: [
-            'python'
-          ]
+          children: ['HTML','CSS'],
         },
+        // 条目2:JS
         {
-          title: 'AI 专栏',
+          title: 'JS',
           collapsable: true,
-          children: [
-            'ai'
-          ]
+          children: [ 'JS']
         },
-      ]
+        // 条目3:Vue
+        {
+          title: 'Vue',
+          collapsable: true,
+          children: ['Vue']
+        },
+        
+      ],
+      // 马丁讲话
+      '/views/speaking/': [
+        // 介绍
+        {
+          title: '栏目介绍',
+          collapsable: false,
+          children: [''],
+        },
+        // 条目
+        {
+          title: '马丁专栏',
+          collapsable: false,
+          children: ['First'],
+        },
+        
+      ],
+      // 商学课
+      '/views/business/': [
+        // 介绍
+        {
+          title: '栏目介绍',
+          collapsable: false,
+          children: [''],
+        },
+        // 条目1:第一季
+        {
+          title: '商学课第一季',
+          collapsable: true,
+          children: ['','First'],
+        },
+        // 条目2:第二季
+        {
+          title: '商学课第二季',
+          collapsable: true,
+          children: ['Second'],
+        },
+        
+      ],
+      // AI产品
+      '/views/AI-PM/': [
+        // 介绍
+        {
+          title: '栏目介绍',
+          collapsable: false,
+          children: [''],
+        },
+        // 条目1:基础
+        {
+          title: 'AI-PM',
+          collapsable: true,
+          children: ['Basic'],
+        },
+        
+      ],
+      // AI技术
+      '/views/AI-Skill/': [
+        // 介绍
+        {
+          title: '栏目介绍',
+          collapsable: false,
+          children: [''],
+        },
+        // 条目1:CV
+        {
+          title: '计算机视觉',
+          collapsable: true,
+          children: ['CV'],
+        },
+        // 条目2:知识图谱
+        {
+          title: '知识图谱',
+          collapsable: true,
+          children: ['KG'],
+        },
+        
+      ],
+      // 个人总结
+      // '/views/review/': [
+      //   // 介绍
+      //   {
+      //     title: '栏目介绍',
+      //     collapsable: false,
+      //     children: [''],
+      //   },
+      //   // 条目
+      //   {
+      //     title: '个人阶段性总结',
+      //     collapsable: false,
+      //     children: ['internship'],
+      //   },
+        
+      // ],
     },
     type: 'blog',
     // 博客设置
@@ -109,6 +215,13 @@ module.exports = {
      */
   },
   plugins: [
-   
+      // [
+      //   '@vuepress/last-updated',
+      //   {
+      //     dateOptions: {
+      //       hour12: false
+      //     }
+      //   }
+      // ]
   ]
 }
