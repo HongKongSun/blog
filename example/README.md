@@ -2,11 +2,11 @@
 home: true
 heroText: 
 tagline: 简单的个人输出空间
-bgImage: '/hero.jpeg'
+bgImage: 'https://gitee.com/hongkongsun/pic-bed/raw/master/blog/hero.jpeg'
 bgImageStyle: {
   height: '500px'
 }
-heroImage: /life.JPG
+heroImage: https://gitee.com/hongkongsun/pic-bed/raw/master/blog/life.JPG
 heroImageStyle: {
   maxWidth: '150px',
   width: '100%',

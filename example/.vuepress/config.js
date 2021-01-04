@@ -3,7 +3,7 @@ module.exports = {
   description: '简单的个人输出空间',
   dest: 'example/public',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: 'https://gitee.com/hongkongsun/pic-bed/raw/master/config/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
     // ['meta', { name: 'baidu-site-verification', content: 'code-dmHFWs3rRk' }]
   ],
@@ -18,8 +18,8 @@ module.exports = {
   theme: require.resolve('../../vuepress-theme-reco'),
   themeConfig: {
     nav: [
-      { text: '🏠 主页', link: '/' },
-      { text: '📄 人生清单', link: '/views/LifeList' },
+      { text: '主页', link: '/' ,icon: 'reco-home'},
+      { text: 'Style', link: '/views/LifeList', icon: 'reco-douyin'},
       {
         text: '专栏', icon: 'reco-document', items: [
           // { text: '个人总结', link: '/views/review/', },
@@ -30,7 +30,7 @@ module.exports = {
           { text: '前端面试专栏', link: '/views/FrontEnd/' },
         ],
       },
-      { text: '⌚️ 时间轴', link: '/timeline/' },
+      { text: 'Time', link: '/timeline/', icon: 'reco-date'},
       { text: '关于我', link: '/views/About/about', icon: 'reco-wechat' },
     ],
     sidebar: {
@@ -167,8 +167,8 @@ module.exports = {
         text: '标签' // 默认 “标签”
       }
     },
-    logo: '/avatar.jpeg',
-    authorAvatar: '/avatar.jpeg',
+    logo: 'https://gitee.com/hongkongsun/pic-bed/raw/master/config/avatar.jpeg',
+    authorAvatar: 'https://gitee.com/hongkongsun/pic-bed/raw/master/config/avatar.jpeg',
     // 搜索设置
     search: false,
     searchMaxSuggestions: 10,
@@ -189,11 +189,11 @@ module.exports = {
     // 友情链接
     friendLink: [
       {
-        title: '我是小黑呀',
+        title: 'Life-Style',
         desc: 'Enjoy when you can, and endure when you must.',
         email: 'hongkongsun7@gmail.com',
         avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        link: 'https://hongkongsun.github.io/'
+        link: '/views/LifeList.html'
       },
       // {
       //   title: 'vuepress-theme-reco',

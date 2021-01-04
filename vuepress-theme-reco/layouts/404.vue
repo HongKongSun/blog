@@ -2,10 +2,10 @@
   <div class="wscn-http404-container">
     <div class="wscn-http404">
       <div class="pic-404">
-        <img class="pic-404__parent" src="../images/404_images/404.png" alt="404">
-        <img class="pic-404__child left" src="../images/404_images/404_cloud.png" alt="404">
-        <img class="pic-404__child mid" src="../images/404_images/404_cloud.png" alt="404">
-        <img class="pic-404__child right" src="../images/404_images/404_cloud.png" alt="404">
+        <img class="pic-404__parent" src="https://gitee.com/hongkongsun/pic-bed/raw/master/config/404.png" alt="404">
+        <img class="pic-404__child left" src="https://gitee.com/hongkongsun/pic-bed/raw/master/config/404_cloud.png" alt="404">
+        <img class="pic-404__child mid" src="https://gitee.com/hongkongsun/pic-bed/raw/master/config/404_cloud.png" alt="404">
+        <img class="pic-404__child right" src="https://gitee.com/hongkongsun/pic-bed/raw/master/config/404_cloud.png" alt="404">
       </div>
       <div class="bullshit">
         <div class="bullshit__oops">OOPS!</div>

@@ -1,8 +1,8 @@
-![](./about.png)
+![](https://gitee.com/hongkongsun/pic-bed/raw/master/config/about.png)
 
 ## 个人信息
 
-- **孙香港**<img src='./resume.jpeg' style='float:right; width:125px;height:183 px; padding-right:50px'/>
+- **孙香港**<img src='https://gitee.com/hongkongsun/pic-bed/raw/master/config/resume.jpeg' style='float:right; width:125px;height:183 px; padding-right:50px'/>
 - 硕士研究生（中国地质大学）
 - 手机：18500792988
 - 邮箱：[787874123@qq.com](787874123@qq.com)
