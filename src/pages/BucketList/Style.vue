@@ -158,10 +158,20 @@ export default {
   margin-bottom: 10px;
   font-size: 15px;
   font-weight: bold;
-  padding: 10px 30px 10px 20px;
+  padding: 10px 30px 10px 10px;
+}
+.el-timeline {
+  padding-left:0.2rem
+}
+::v-deep .el-timeline-item__wrapper{
+  padding-left: 15px;
+  top: -6px;
 }
 ::v-deep .el-timeline-item__timestamp {
   font-size: 16px;
   font-weight: bold;
+}
+.el-divider--horizontal{
+  height: 2px;
 }
 </style>
