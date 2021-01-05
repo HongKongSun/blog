@@ -158,7 +158,7 @@ export default {
   margin-bottom: 10px;
   font-size: 15px;
   font-weight: bold;
-  padding: 10px 30px;
+  padding: 10px 30px 10px 20px;
 }
 ::v-deep .el-timeline-item__timestamp {
   font-size: 16px;
