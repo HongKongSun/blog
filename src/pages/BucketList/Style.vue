@@ -25,6 +25,7 @@
 
         <!-- <el-card class="title" shadow="always"> -->
         <el-carousel
+          v-if="item.imgs"
           type="card"
           arrow="always"
           indicator-position="outside"
@@ -45,6 +46,16 @@
             </el-image>
           </el-carousel-item>
         </el-carousel>
+
+        <iframe
+          v-else
+          class="iframe"
+          frameborder="no"
+          allowfullscreen
+          mozallowfullscreen
+          webkitallowfullscreen
+          :src="item.video"
+        ></iframe>
         <!-- </el-card> -->
         <el-divider></el-divider>
         <!-- </el-card> -->
@@ -161,9 +172,9 @@ export default {
   padding: 10px 30px 10px 10px;
 }
 .el-timeline {
-  padding-left:0.2rem
+  padding-left: 0.2rem;
 }
-::v-deep .el-timeline-item__wrapper{
+::v-deep .el-timeline-item__wrapper {
   padding-left: 15px;
   top: -6px;
 }
@@ -171,7 +182,18 @@ export default {
   font-size: 16px;
   font-weight: bold;
 }
-.el-divider--horizontal{
+.el-divider--horizontal {
   height: 2px;
+}
+.iframe {
+  width: 100%;
+  height: 500px;
+}
+// 手机情况
+@media only screen and (max-width: 600px) {
+  .iframe {
+    width: 100%;
+    height: 200px;
+  }
 }
 </style>
