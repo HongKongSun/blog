@@ -7,18 +7,13 @@ const bucketList= [
     date: '2020-6-30',
     imgs: [
       getImageUrl('dji1.jpeg'),
-      getImageUrl('dji2.jpeg'),
-      getImageUrl('dji3.jpeg'),
-      getImageUrl('dji4.jpeg'),
-      getImageUrl('dji5.jpeg'),
-      getImageUrl('dji6.jpeg'),
     ],
   },
   {
     name: '体验一次滑翔伞',
     status: 'done',
     date: '2020-6-30',
-    video:"http://go.plvideo.cn/front/video/preview?vid=7b8e6cc2601579d960cc5f7920d4d82f_7"
+    video:"//go.plvideo.cn/front/video/preview?vid=7b8e6cc2601579d960cc5f7920d4d82f_7"
   },
   {
     name: '玩一次射箭',

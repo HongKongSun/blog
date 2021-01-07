@@ -8,7 +8,6 @@
         <el-radio v-model="type" label="todo">Flag</el-radio>
       </span>
     </h1>
-
     <Style v-for="item in filterBucketList" :item="item" :key="item.title" />
   </div>
 </template>

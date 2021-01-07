@@ -41,7 +41,7 @@
                 <i class="el-icon-loading"></i>
               </div>
               <div slot="error" class="img-slot">
-                加载失败，可能没有翻墙？
+                load error ？
               </div>
             </el-image>
           </el-carousel-item>
@@ -56,9 +56,7 @@
           webkitallowfullscreen
           :src="item.video"
         ></iframe>
-        <!-- </el-card> -->
-        <el-divider></el-divider>
-        <!-- </el-card> -->
+        <el-divider />
       </el-timeline-item>
     </el-timeline>
   </div>
@@ -67,6 +65,7 @@
 <script>
 import Vue from "vue";
 import dayjs from "dayjs";
+// import "./video.js";
 import { DATE } from "../../lib/date.js";
 
 export default {

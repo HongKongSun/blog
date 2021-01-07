@@ -29,6 +29,7 @@
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-typescript": "~4.3.0",
     "@vue/cli-service": "~4.3.0",
+    "@vuepress/plugin-nprogress": "^1.7.1",
     "@vuepress/theme-blog": "^2.3.2",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",

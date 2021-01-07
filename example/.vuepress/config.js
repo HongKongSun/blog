@@ -90,7 +90,7 @@ module.exports = {
         {
           title: '商学课第一季',
           collapsable: true,
-          children: ['','First'],
+          children: ['First'],
         },
         // 条目2:第二季
         {
@@ -214,14 +214,5 @@ module.exports = {
      * 'twilight'
      */
   },
-  plugins: [
-      // [
-      //   '@vuepress/last-updated',
-      //   {
-      //     dateOptions: {
-      //       hour12: false
-      //     }
-      //   }
-      // ]
-  ]
+  plugins: ['@vuepress/nprogress']
 }
