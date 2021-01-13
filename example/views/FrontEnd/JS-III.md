@@ -1,6 +1,6 @@
 ---
-title: JS
-date: 2020-07-24
+title: JS-III
+date: 2020-09-24
 tags:
  - JavaScript      
 categories: 
@@ -214,7 +214,7 @@ for(var i = 0 , len = lists.length ; i < len ; i++){
 }
 ```
 
-你会发现当鼠标移过每一个<li>元素时，总是弹出4，而不是我们期待的元素下标。这是为什么呢？注意事项里已经讲了（最终值）。显然这种解释过于简单，当mouseover事件调用监听函数时，首先在匿名函数（ function(){ alert(i); }）内部查找是否定义了 i，结果是没有定义；因此它会向上查找，查找结果是已经定义了，并且i的值是4（循环后的i值）；所以，最终每次弹出的都是4。
+你会发现当鼠标移过每一个`<li>`元素时，总是弹出4，而不是我们期待的元素下标。这是为什么呢？注意事项里已经讲了（最终值）。显然这种解释过于简单，当mouseover事件调用监听函数时，首先在匿名函数（ function(){ alert(i); }）内部查找是否定义了 i，结果是没有定义；因此它会向上查找，查找结果是已经定义了，并且i的值是4（循环后的i值）；所以，最终每次弹出的都是4。
 
 
 
@@ -238,10 +238,6 @@ for(var i = 0 , len = lists.length ; i < len ; i++){
 3、宿主对象不是引擎的原生对象，而是由宿主框架通过某种机制注册到JavaScript引擎中的对象。
 
 4、一些宿主会把自己提供的对象／构造器也称为“原生对象”，例如Internet Explorer 7就把它提供的XMLHttpRequest()称为原生的——与此相对的是在它的更早先版本中通过“new ActiveXObject('Microsoft.XMLHTTP')”这样的方法创建的对象。这种情况下，读者应注意到“宿主的原生对象”与“引擎的原生对象”之间的差异。
-
-![img](https:////upload-images.jianshu.io/upload_images/6379663-97e69faac0a96010.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/640/format/webp)
-
-1.jpg
 
 #### 一、原生对象
 
@@ -1501,7 +1497,7 @@ Window 对象表示浏览器中打开的窗口。
 
 | 集合     | 描述                                                         |
 | :------- | :----------------------------------------------------------- |
-| frames[] | 返回窗口中所有命名的框架。该集合是 Window 对象的数组，每个 Window 对象在窗口中含有一个框架或 <iframe>。属性 frames.length 存放数组 frames[] 中含有的元素个数。注意，frames[] 数组中引用的框架可能还包括框架，它们自己也具有 frames[] 数组。 |
+| frames[] | 返回窗口中所有命名的框架。该集合是 Window 对象的数组，每个 Window 对象在窗口中含有一个框架或 `<iframe>`。属性 frames.length 存放数组 frames[] 中含有的元素个数。注意，frames[] 数组中引用的框架可能还包括框架，它们自己也具有 frames[] 数组。 |
 
 - Window 对象属性
 
@@ -1599,7 +1595,7 @@ Document 对象使我们可以从脚本中对 HTML 页面中的所有元素进�
 
 | 属性                                                         | 描述                                                         |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| body                                                         | 提供对 <body> 元素的直接访问。对于定义了框架集的文档，该属性引用最外层的 <frameset>。 |
+| body                                                         | 提供对 `<body>` 元素的直接访问。对于定义了框架集的文档，该属性引用最外层的` <frameset>`。 |
 | [cookie](http://www.w3school.com.cn/jsref/prop_doc_cookie.asp) | 设置或返回与当前文档有关的所有 cookie。                      |
 | [domain](http://www.w3school.com.cn/jsref/prop_doc_domain.asp) | 返回当前文档的域名。                                         |
 | [lastModified](http://www.w3school.com.cn/jsref/prop_doc_lastmodified.asp) | 返回文档被最后修改的日期和时间。                             |

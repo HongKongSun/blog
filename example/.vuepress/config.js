@@ -52,13 +52,25 @@ module.exports = {
         {
           title: 'JS',
           collapsable: true,
-          children: [ 'JS']
+          children: ['JS', 'JS-II', 'JS-III',]
         },
         // 条目3:Vue
         {
           title: 'Vue',
           collapsable: true,
           children: ['Vue']
+        },
+        // 条目4:Webpack
+        {
+          title: 'Webpack',
+          collapsable: true,
+          children: ['Webpack']
+        },
+        // 条目4:DesignPattern
+        {
+          title: '设计模式',
+          collapsable: true,
+          children: ['DesignPattern']
         },
         
       ],

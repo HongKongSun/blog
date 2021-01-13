@@ -21,15 +21,15 @@ categories:
 
 5. 便于团队开发和维护，语义化更具可读性，遵循W3C标准的团队都遵循这个标准，可以减少差异化。
 
-   这就是我的理解，面试官
-
 ### `2`. meta 标签，以及viewport
 
 ***< meta > 元素***
 
 < meta> 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
 
-<meta>元素可以定义文档的各种元数据，提供各种文档信息，通俗点说就是可以理解为提供了关于网站的各种信息。html文档中可以包含多个<meta>元素，每个<meta>元素只能用于一种用途，如果想定义多个文档信息，则需要在head标签中添加多个meta元素。
+```html
+<meta>元素可以定义文档的各种元数据，提供各种文档信息，通俗点说就是可以理解为提供了关于网站的各种信息。html文档中可以包含多个<meta>元素，每个<meta>元素只能用于一种用途，如果想定义多个文档信息，则需要在head标签中添加多个meta元素
+```
 
 | 元素          | meta                                                         |
 | ------------- | ------------------------------------------------------------ |
@@ -39,9 +39,11 @@ categories:
 
 **< meta >具体用途**
 
+```html
 <meta>元素除去charset属性外，都是http-equiv属性或name属性结合content来使用
+1.指定名/值对定义元数据
+```
 
-**1.指定名/值对定义元数据**
 
 name属性与content属性结合使用, name用来表示元数据的类型，表示当前<meta>标签的具体作用；content属性用来提供值。
 
@@ -90,7 +92,7 @@ maximum和minimum：分别表示缩放的最大最小值, 要注意的是, maxim
 
 上面的meta标签就是告诉浏览器, 不要在移动端显示的时候缩放
 
-<img src="https://segmentfault.com/img/remote/1460000017480059?w=1304&amp;h=1186" alt="viewreport" style="zoom:50%;" />
+<img src="https://gitee.com/hongkongsun/pic-bed/raw/master/static/viewport.png" style="zoom:50%;" />
 
 主要介绍一个当meta标签的name属性值为viewreport时的视口的大小
 
@@ -111,13 +113,13 @@ initail-scale = 屏幕宽度 / 视口宽度
 - 4.content同时设置width和initail-scale时，视口宽度为width的值，页面显示按照initail-scale比率进行缩放
 - 5.一般都是进行如下设置，来实现视口宽等于设备宽，布局完成后屏幕显示也不进行缩放
 
-```
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
 **renderer**
 
-```
+```html
 <meta name="renderer" content="webkit"> //默认webkit内核 
 <meta name="renderer" content="ie-comp"> //默认IE兼容模式 
 <meta name="renderer" content="ie-stand"> //默认IE标准模式
@@ -129,11 +131,11 @@ initail-scale = 屏幕宽度 / 视口宽度
 
 charset属性为HTML5新增的属性，用于声明字符编码,以下两种写法效果一样
 
-```
+```html
 <meta charset="utf-8"> //HTML5
 ```
 
-```
+```html
 <meta http-equiv="content-Type" content="text/html;charset=utf-8"> //旧的HTML
 ```
 
@@ -141,37 +143,37 @@ charset属性为HTML5新增的属性，用于声明字符编码,以下两种写�
 
 **http-equiv**属性与**content**属性结合使用, **http-equiv**属性为指定所要模拟的标头字段的名称，**content**属性用来提供值。
 
-```
+```html
 <meta http-equiv="参数" content="具体的描述">
 ```
 
 **content-Type** 声明网页字符编码:
 
-```
+```html
 <meta http-equiv="content-Type" content="text/html charset=UTF-8">
 ```
 
 **refresh** 指定一个时间间隔(以秒为单位),在此时间过去之后从服务器重新载入当前页面,也可以另外指定一个页面.
 
-```
+```html
 <meta http-equiv="refresh" content="2;URL=http://www.baidu.com">//2秒后在当前页跳转到百度
 ```
 
 **X-UA-Compatible** 浏览器采取何种版本渲染当前页面
 
-```
+```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> //指定IE和Chrome使用最新版本渲染当前页面
 ```
 
 **expires** 用于设定网页的到期时间，过期后网页必须到服务器上重新传输
 
-```
+```html
 <meta http-equiv="expires" content="Sunday 22 July 2016 16:30 GMT">
 ```
 
 **catch-control** 用于指定所有缓存机制在整个请求/响应链中必须服从的指令
 
-```
+```html
 <meta http-equiv="cache-control" content="no-cache">//
 ```
 
@@ -271,8 +273,7 @@ canvas是html5提供的新元素<canvas\>，而svg存在的历史要比canvas久
 首先，从它们的功能上来讲，canvas可以看做是一个画布。，其绘制出来的图形为**标量图**，因此，可以在canvas中引入jpg或png这类格式的图片，在实际开发中，大型的网络**游戏**都是用canvas画布做出来的，并且canvas的技术现在已经相当的成熟。另外，我们喜欢用canvas来做一些统计用的图表，如柱状图曲线图或饼状图等。
 而svg，所绘制的图形为**矢量图**，所以其用法上受到了限制。因为只能绘制矢量图，所以svg中不能引入普通的图片，因为矢量图的不会失真的效果，在项目中我们会用来**做小图标**。但是由于其本质为矢量图，可以被无限放大而不会失真，这很适合被用来做地图，而百度地图就是用svg技术做出来的。
 
-另外从技术方面来讲canvas里面绘制的图形不能被引擎抓取，如我们要让canvas里面的一个图片跟随鼠标事件: canvas.onmouseover=function(){}。
-而svg里面的图形可以被引擎抓取，支持事件的绑定。另外canvas中我们绘制图形通常是通过javascript来实现，svg更多的是通过标签来来实现，如在svg中绘制正矩形形就要用<rect>，这里我们不能用属性style="width:XXX;height:XXX;"来定义。
+另外从技术方面来讲canvas里面绘制的图形不能被引擎抓取，如我们要让canvas里面的一个图片跟随鼠标事件: canvas.onmouseover=function(){}。而svg里面的图形可以被引擎抓取，支持事件的绑定。另外canvas中我们绘制图形通常是通过javascript来实现，svg更多的是通过标签来来实现，如在svg中绘制正矩形形就要用`<rect>`，这里我们不能用属性style="width:XXX;height:XXX;"来定义。
 
 ###  10.页面导入样式时，使用 link 和@import 有什么区别？
 ```css
@@ -307,10 +308,6 @@ link属于XHTML标签，@import完全是CSS提供的一种方式,只能加载CSS
 兼容性的差别。由于@import是CSS2.1提出的所以老的浏览器不支持，而link标签无此问题
 
 当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的
-
-
-
-
 
 ###  `11`.HTML5变化
 
@@ -363,7 +360,7 @@ link属于XHTML标签，@import完全是CSS提供的一种方式,只能加载CSS
 1. 页面头部像下面一样加入一个 manifest 的属性；
 2. 在 cache.manifest 文件的编写离线存储的资源
 
-```
+```html
 CACHE MANIFEST
 #v1.0
 
@@ -392,8 +389,4 @@ FALLBACK:
   区别：`src` 用于替代这个元素，而 `href` 用于建立这个标签与外部资源之间的关系
 
   - `<link href="style.css" rel="stylesheet" />`浏览器加载到这里的时候，html 的渲染和解析不会暂停，css的加载是同步进行的。
-  - `<script src ="srcipt.js "></script>` 当浏览器解析到这句代码的时候，页面的解析和渲染加载都会暂停，直到浏览器拿到并执行完这个 js 文件
-
-  
-
-  <script src="script.js"></script>当浏览器解析到这句代码时，页面的加
+  - `<script src ="srcipt.js "></script>` 当浏览器解析到这句代码的时候，页面的解析和渲染加载都会暂停，直到浏览器拿到并执行完这个 js 文件。

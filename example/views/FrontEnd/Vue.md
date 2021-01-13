@@ -1,6 +1,6 @@
 ---
 title: Vue
-date: 2020-07-24
+date: 2020-10-24
 tags:
  - Vue       
 categories: 
@@ -164,7 +164,7 @@ mounted(){
 
 受现代 JavaScript 的限制 ，Vue **无法检测到对象属性的添加或删除**。由于 Vue 会在初始化实例时对属性执行 getter/setter 转化，所以属性必须在 data 对象上存在才能让 Vue 将它转换为响应式的。但是 Vue 提供了 `Vue.set (object, propertyName, value) / vm.$set (object, propertyName, value)`  来实现为对象添加响应式属性。
 
-阅读过源码可知，vm.$set 的实现原理是：
+阅读过源码可知，`vm.$set` 的实现原理是：
 
 - 如果目标是数组，直接使用数组的 splice 方法触发响应式；
 
@@ -426,7 +426,7 @@ history主要利用了 HTML5的 historyAPI 来实现,用pushState和replaceState
 
 所有的 prop 都使得其父子 prop 之间形成了一个**单向下行绑定**：父级 prop 的更新会向下流动到子组件中，但是反过来则不行。这样会防止从子组件意外改变父级组件的状态，从而导致你的应用的数据流向难以理解。
 
-额外的，每次父级组件发生更新时，子组件中所有的 prop 都将会刷新为最新的值。这意味着你不应该在一个子组件内部改变 prop。如果你这样做了，Vue 会在浏览器的控制台中发出警告。子组件想修改时，只能通过 $emit 派发一个自定义事件，父组件接收到后，由父组件修改。
+额外的，每次父级组件发生更新时，子组件中所有的 prop 都将会刷新为最新的值。这意味着你不应该在一个子组件内部改变 prop。如果你这样做了，Vue 会在浏览器的控制台中发出警告。子组件想修改时，只能通过 `$emit` 派发一个自定义事件，父组件接收到后，由父组件修改。
 
 有两种常见的试图改变一个 prop 的情形 :
 
@@ -999,7 +999,7 @@ export default {
 
 #### 2、Multiple root elements
 
-在 `Vue 2` 中，tempalte 只能取一个根元素。即使我们只有两个 <p> 标记，我们也必须将它们包含在一个 <div> 标记中：
+在 `Vue 2` 中，tempalte 只能取一个根元素。即使我们只有两个 `<p>` 标记，我们也必须将它们包含在一个 `<div> `标记中：
 
 ```
 <template>
@@ -1018,7 +1018,7 @@ export default {
 
 幸好在 `Vue 3` 中取消了这一限制：
 
-可以直接在<template></template>中使用任意数量的标签:
+可以直接在`<template></template>`中使用任意数量的标签:
 
 ```
 <template>
@@ -1190,16 +1190,16 @@ export default {
 复制代码
 ```
 
-<Teleport> 是 vue3 中提供特定的标签用于创建一个 `Portals`。
+`<Teleport>` 是 vue3 中提供特定的标签用于创建一个 `Portals`。
 
-<Teleport> </Teleport>中间出现的内容会出现在 `to` 指定的节点中：
+`<Teleport> </Teleport>`中间出现的内容会出现在 `to` 指定的节点中：
 
 ```
 <div id="modal-target"></div>
 复制代码
 ```
 
-> 目前为止，<Teleport>在 Alpha 版本中并不能使用
+> 目前为止，`<Teleport>`在 Alpha 版本中并不能使用
 
 #### 7、Transition
 
@@ -1435,7 +1435,7 @@ beforeRouteLeave (to, from, next) {
 
 - v-once是做什么的
 
-- <vue-router>和<router-view>了解一下
+- `<vue-router>`和`<router-view>`了解一下
 
 - vue自定义过滤器filter
 
